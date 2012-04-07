@@ -1,0 +1,11 @@
+= Bits for making Marmalade =
+
+The marmalade Emacs repository system is relatively complex. Complex
+enough that I've puppeted and vagrantified it.
+
+This repo contains the workings.
+
+See the Rakefile for more information.
+
+The vagrant box used is my own centos 6 box. Please ask for it if you
+want it.
