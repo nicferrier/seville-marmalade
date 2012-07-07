@@ -1,5 +1,5 @@
 class depends {
-      $dependancies = ["openssl-devel", "mongodb", "git", "mongodb-server"]
+      $dependancies = ["cronie", "openssl-devel", "mongodb", "git", "mongodb-server"]
 
       package { $dependancies:
       }
