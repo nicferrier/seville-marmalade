@@ -24,13 +24,21 @@ namespace :marmalade_box do
 
   task :node_checkout do
     unless Dir.exist?("node.git")
-      sh "git clone git://github.com/joyent/node.git node.git"
+      if Dir.exist?("../node.git")
+        sh "git clone ../node.git node.git"
+      else
+        sh "git clone git://github.com/joyent/node.git node.git"
+      end
     end
   end
 
   task :marmalade_checkout do
     unless Dir.exist?("marmalade.git")
-      sh "git clone git@github.com:nicferrier/marmalade.git marmalade.git"
+      if Dir.exist?("../marmalade.git")
+        sh "git clone ../marmalade.git marmalade.git"
+      else
+        sh "git clone git@github.com:nicferrier/marmalade.git marmalade.git"
+      end
     end
   end
 
